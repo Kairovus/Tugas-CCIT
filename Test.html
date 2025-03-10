@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RESPONSIVE WEB DESIGN</title>
+    <style>
+      .container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: lightgray;
+      }
+
+      h1 {
+        font-size: 2em;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      h3 {
+        font-size: 1em;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      p {
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      img {
+        width: 100%;
+        margin-bottom: 20px;
+        border-radius: 1rem;
+      }
+
+      .boxes {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .box {
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        border-radius: 1rem;
+      }
+
+      .box1 {
+        background-color: rgb(235, 74, 74);
+      }
+
+      .box2 {
+        background-color: lime;
+      }
+
+      .box3 {
+        background-color: rgb(100, 113, 255);
+      }
+
+      @media only screen and (max-width: 992px) {
+        body {
+          background-color: pink;
+        }
+
+        p {
+          font-size: 16px;
+          color: gray;
+        }
+
+        img {
+          width: 80%;
+        }
+
+        .boxes {
+          width: 80%;
+        }
+      }
+
+      @media only screen and (max-width: 576px) {
+        body {
+          background-color: yellow;
+        }
+
+        p {
+          font-size: 12px;
+          color: red;
+        }
+
+        img {
+          width: 80%;
+        }
+
+        .boxes {
+          width: 60%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="title">INI ADALAH TEST RESPONSIVE WEB</h1>
+
+    <h3 id="tulisan">Halaman akan berubah warna sesuai dengan device.</h3>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti veniam
+      atque ut ab aliquid neque accusamus beatae impedit, cumque assumenda
+      aliquam nisi, recusandae, harum molestiae. Beatae sint praesentium sequi
+      tempore!
+    </p>
+
+    <div class="container">
+      <img src="amoga.png" />
+
+      <div class="boxes">
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+      </div>
+    </div>
+  </body>
+</html>
